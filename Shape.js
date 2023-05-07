@@ -8,4 +8,19 @@ class Shape{
         let resText=``;
         return resText;
     }
+    shapeSVG(){
+        let svgText;
+        switch(this.type){
+            case 'Square':
+                break;
+            case 'Circle':
+                break;
+            case 'Triangle':
+                break;
+            default:
+                break;
+        }
+        return svgText;
+    }
+
 }
