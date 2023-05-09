@@ -28,6 +28,12 @@ inquirer.prompt([
             return;
         }
     })
+    fs.writeFile("./index.html",logo.renderSVG(),err =>{
+        if(err){
+            console.error(err);
+            return;
+            }
+    })
 })
 
 
