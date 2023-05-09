@@ -3,7 +3,7 @@ class Shape{
         this.text=this.setText(text);
         this.color=color;
         this.type=type;
-        var validateColor = require("validate-color").default;
+        
     }
     renderSVG(){
         let resText=`<svg height='300' width='200'>
