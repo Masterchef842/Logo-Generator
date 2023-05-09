@@ -6,9 +6,10 @@ class Shape{
         
     }
     renderSVG(){
-        let resText=`<svg height='300' width='200'>
+        let resText=`
+        <svg height='300' width='200'>
             <${this.shapeSVG()} fill="${this.setColor()}"/>
-            <text x="66" y="160" font-size="300%"="black">${this.text}</text>
+            <text x="66" y="160" font-size="300%" fill="black">${this.text}</text>
         </svg>
         `;
         return resText;
@@ -41,6 +42,8 @@ class Shape{
     setText(text){
         if(text.length>3)
         return [text[0],text[1],text[2]].join("")
+        else
+        return text;
     }
 
 

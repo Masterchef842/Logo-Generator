@@ -40,7 +40,7 @@ describe('Shape',()=>{
         })
     });
     describe('setColor RGB',()=>{
-        it("Should return an RGB format wehn 3 numbers are passed in",()=>{
+        it("Should return an RGB format when 3 numbers are passed in",()=>{
             const shape = new Shape("txt","22,22,22","Circle")
             const result=(shape.setColor()==='rgb(22,22,22)')
 
