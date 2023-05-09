@@ -11,7 +11,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'What color would you like your logo? (enter color name or hex)',
+        message: 'What color would you like your logo? (enter color name, hex (#XXXXXX) or RGB(#,#,#))',
         name: 'logoColor',
     },
     {
@@ -22,7 +22,7 @@ inquirer.prompt([
     },
 ]).then((response)=>{
     logo=new Shape(response.logoText, response.logoColor, response.logoShape)
-    fs.writeFile("./logo.svg",response.renderSVG(),err =>{
+    fs.writeFile("./logo.svg",logo.renderSVG(),err =>{
         if(err){
             console.error(err);
             return;
